@@ -1,0 +1,36 @@
+{
+  "description": ["Defaults for Python projects"],
+  "extends": [
+    "github>ryankanno/renovate-config",
+    ":enablePreCommit"
+  ],
+  "enabledManagers": [
+    "poetry"
+  ],
+  "packageRules": [
+    {
+      "managers": [
+        "poetry"
+      ],
+      "semanticCommitType": "chore",
+      "groupName": "deps-dev",
+      "semanticCommitScope": "dev",
+      "packagePatterns": [
+        "black",
+        "^flake8",
+        "mypy",
+        "pdbpp",
+        "pre-commit",
+        "^pytest",
+        "tox",
+        "vulture"
+      ],
+      "automerge": true,
+      "labels": [
+        "automerge",
+        "dependencies",
+        "python"
+      ]
+    }
+  ]
+}
