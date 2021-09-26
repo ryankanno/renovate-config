@@ -2,11 +2,14 @@
   "description": ["Defaults for all projects"],
   "extends": [
      "config:base",
+
      ":prConcurrentLimit10",
      ":prHourlyLimit4",
      ":timezone(Asia/Tokyo)",
+
      ":separateMultipleMajorReleases",
-     ":separateMinorPatch",
+     ":combinePatchMinorReleases",
+
      ":automergeRequireAllStatusChecks"
   ]
 }
