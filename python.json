@@ -9,12 +9,20 @@
   ],
   "packageRules": [
     {
+      "matchDepTypes": ["dependencies"],
+      "groupName": "deps",
+      "enabled": false
+    },
+    {
       "managers": [
         "poetry"
       ],
       "semanticCommitType": "chore",
-      "groupName": "deps-dev",
       "semanticCommitScope": "dev",
+      "groupName": "deps-dev",
+      "matchDepTypes": [
+        "dev-dependencies"
+      ],
       "packagePatterns": [
         "black",
         "^flake8",
