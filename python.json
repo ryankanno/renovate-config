@@ -26,9 +26,14 @@
       "packagePatterns": [
         "black",
         "^flake8",
+        "hypothesis",
+        "isort",
+        "konch",
         "mypy",
         "pdbpp",
         "pre-commit",
+        "pycodestyle",
+        "pyflakes",
         "^pytest",
         "tox",
         "vulture"
