@@ -10,7 +10,7 @@
   "packageRules": [
     {
       "matchDepTypes": ["dependencies"],
-      "groupName": "deps",
+      "groupName": "py-deps",
       "enabled": false
     },
     {
@@ -18,8 +18,7 @@
         "poetry"
       ],
       "semanticCommitType": "chore",
-      "semanticCommitScope": "dev",
-      "groupName": "deps-dev",
+      "groupName": "py-dev-deps",
       "matchDepTypes": [
         "dev-dependencies"
       ],
@@ -38,6 +37,27 @@
         "tox",
         "vulture"
       ],
+      "automerge": true,
+      "labels": [
+        "automerge",
+        "dev-dependencies",
+        "python"
+      ]
+    },
+    {
+      "managers": [
+        "poetry"
+      ],
+      "semanticCommitType": "chore",
+      "groupName": "py-popular-deps",
+      "matchDepTypes": [
+        "dependencies"
+      ],
+      "matchUpdateTypes": [
+          "minor",
+          "patch"
+      ],
+      "matchCurrentVersion": "!/^0/",
       "automerge": true,
       "labels": [
         "automerge",
