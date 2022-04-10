@@ -9,11 +9,6 @@
   ],
   "packageRules": [
     {
-      "matchDepTypes": ["dependencies"],
-      "groupName": "py-deps",
-      "enabled": false
-    },
-    {
       "managers": [
         "poetry"
       ],
@@ -49,7 +44,7 @@
         "poetry"
       ],
       "semanticCommitType": "chore",
-      "groupName": "py-popular-deps",
+      "groupName": "py-deps",
       "matchDepTypes": [
         "dependencies"
       ],
