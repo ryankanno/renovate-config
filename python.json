@@ -12,6 +12,18 @@
       "managers": [
         "poetry"
       ],
+      "matchUpdateTypes": [
+          "major"
+      ],
+      "matchDepTypes": [
+        "dependencies"
+      ],
+      "enabled": false
+    },
+    {
+      "managers": [
+        "poetry"
+      ],
       "semanticCommitType": "chore",
       "groupName": "py-dev-deps",
       "matchDepTypes": [
