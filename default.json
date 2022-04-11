@@ -5,7 +5,6 @@
 
      ":prConcurrentLimit10",
      ":prHourlyLimit4",
-     ":timezone(Asia/Tokyo)",
 
      ":separateMultipleMajorReleases",
      ":combinePatchMinorReleases",

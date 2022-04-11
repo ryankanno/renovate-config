@@ -1,0 +1,9 @@
+{
+  "extends": [
+    ":timezone(Asia/Tokyo)"
+  ],
+  "schedule": [
+    "every sunday and monday",
+    "before 6:00 after 14:00 every day except sunday and monday"
+  ]
+}
