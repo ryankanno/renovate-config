@@ -3,24 +3,13 @@
   "extends": [
     "github>ryankanno/renovate-config",
     "github>ryankanno/renovate-config:schedule",
-    ":enablePreCommit"
+    ":enablePreCommit",
+    ":disableMajorUpdates"
   ],
   "enabledManagers": [
     "poetry"
   ],
   "packageRules": [
-    {
-      "managers": [
-        "poetry"
-      ],
-      "matchUpdateTypes": [
-          "major"
-      ],
-      "matchDepTypes": [
-        "dependencies"
-      ],
-      "enabled": false
-    },
     {
       "managers": [
         "poetry"
