@@ -5,7 +5,8 @@
     ":timezone(Asia/Tokyo)"
   ],
   "schedule": [
-    "every sunday and monday",
-    "before 6:00 after 14:00 except sunday and monday"
+    "before 6am except Sunday and Monday",
+    "after 2pm except Sunday and Monday",
+    "every Sunday and Monday"
   ]
 }
