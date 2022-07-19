@@ -3,7 +3,6 @@
   "description": ["Defaults for Python projects"],
   "extends": [
     "github>ryankanno/renovate-config",
-    "github>ryankanno/renovate-config:schedule",
     ":enablePreCommit",
     ":disableMajorUpdates"
   ],
