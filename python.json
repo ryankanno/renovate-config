@@ -7,14 +7,13 @@
     ":enablePreCommit",
     ":disableMajorUpdates"
   ],
-  "enabledManagers": [
-    "poetry"
-  ],
+  "poetry": {
+    "enabled": true,
+    "rangeStrategy": "update-lockfile"
+  },
   "packageRules": [
     {
-      "managers": [
-        "poetry"
-      ],
+      "matchManagers": ["poetry"],
       "semanticCommitType": "chore",
       "groupName": "py-dev-deps",
       "matchDepTypes": [
@@ -43,9 +42,7 @@
       ]
     },
     {
-      "managers": [
-        "poetry"
-      ],
+      "matchManagers": ["poetry"],
       "semanticCommitType": "chore",
       "groupName": "py-deps",
       "matchDepTypes": [
@@ -55,7 +52,6 @@
           "minor",
           "patch"
       ],
-      "matchCurrentVersion": "!/^0/",
       "automerge": true,
       "labels": [
         "automerge",
