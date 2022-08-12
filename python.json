@@ -5,6 +5,7 @@
     "github>ryankanno/renovate-config",
     "github>ryankanno/renovate-config:schedule",
     ":enablePreCommit",
+    ":semanticCommits",
     ":disableMajorUpdates"
   ],
   "poetry": {
@@ -14,7 +15,8 @@
   "packageRules": [
     {
       "matchManagers": ["poetry"],
-      "semanticCommitType": "chore",
+      "semanticCommitType": "build",
+      "semanticCommitScope": "deps-dev",
       "groupName": "py-dev-deps",
       "matchDepTypes": [
         "dev-dependencies"
@@ -43,8 +45,8 @@
     },
     {
       "matchManagers": ["poetry"],
-      "semanticCommitType": "chore",
-      "groupName": "py-deps",
+      "semanticCommitType": "fix",
+      "semanticCommitScope": "deps",
       "matchDepTypes": [
         "dependencies"
       ],
