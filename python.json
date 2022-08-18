@@ -4,7 +4,6 @@
   "extends": [
     "github>ryankanno/renovate-config",
     "github>ryankanno/renovate-config:schedule",
-    ":enablePreCommit",
     ":semanticCommits",
     ":disableMajorUpdates"
   ],
@@ -20,7 +19,7 @@
     {
       "matchManagers": ["poetry"],
       "semanticCommitType": "build",
-      "semanticCommitScope": "deps-dev",
+      "semanticCommitScope": "dev-deps",
       "groupName": "py-dev-deps",
       "matchDepTypes": [
         "dev-dependencies"
