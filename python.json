@@ -12,6 +12,10 @@
     "enabled": true,
     "rangeStrategy": "update-lockfile"
   },
+  "pre-commit": {
+    "enabled": true,
+    "groupName": "pre-commit"
+  },
   "packageRules": [
     {
       "matchManagers": ["poetry"],
@@ -59,6 +63,17 @@
         "automerge",
         "dependencies",
         "python"
+      ]
+    },
+    {
+      "matchManagers": ["pre-commit"],
+      "semanticCommitType": "build",
+      "semanticCommitScope": "ci",
+      "automerge": true,
+      "labels": [
+        "automerge",
+        "pre-commit",
+        "ci"
       ]
     }
   ]
